@@ -34,9 +34,17 @@ extension PharmaciesListDataSource: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(
             withIdentifier: PharmacyTableViewCell.reuseIdentifier,
             for: indexPath) as! PharmacyTableViewCell
+        let pharmacy = pharmacies[indexPath.row]
+        cell.viewModel = PharmacyTableViewCell.ViewModel(with: pharmacy)
         return cell
     }
-    
-    
+}
+
+extension PharmacyTableViewCell.ViewModel {
+    init(with pharmacy: Pharmacy) {
+        pharmacyName = pharmacy.localNombre
+        pharmacyAddress = pharmacy.localDireccion
+        locationName = pharmacy.localidadNombre
+    }
 }
 

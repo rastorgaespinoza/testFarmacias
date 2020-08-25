@@ -9,16 +9,26 @@
 import UIKit
 
 class PharmacyTableViewCell: UITableViewCell {
+    @IBOutlet weak var pharmacyName: UILabel!
+    @IBOutlet weak var pharmacyAddress: UILabel!
+    @IBOutlet weak var locationName: UILabel!
+    
+    
     static let reuseIdentifier = "PharmacyTableViewCell"
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var viewModel = ViewModel() {
+        didSet {
+            pharmacyName.text = viewModel.pharmacyName
+            pharmacyAddress.text = viewModel.pharmacyAddress
+            locationName.text = viewModel.locationName
+        }
     }
+}
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+extension PharmacyTableViewCell {
+    struct ViewModel {
+        var pharmacyName: String = ""
+        var pharmacyAddress: String = ""
+        var locationName: String = ""
     }
 }

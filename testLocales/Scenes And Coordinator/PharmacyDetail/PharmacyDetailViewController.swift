@@ -11,6 +11,8 @@ import Alamofire
 
 class PharmacyDetailViewController: UIViewController {
 
+    var pharmacy: Pharmacy?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

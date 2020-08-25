@@ -10,7 +10,6 @@
 		77B6ED4132C583C1BE4A98BE /* Pods_testLocales.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B592212A605DF8F547035C /* Pods_testLocales.framework */; };
 		FB3BB65D24F48646001D711B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3BB65C24F48646001D711B /* AppDelegate.swift */; };
 		FB3BB65F24F48646001D711B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3BB65E24F48646001D711B /* SceneDelegate.swift */; };
-		FB3BB66424F48646001D711B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3BB66224F48646001D711B /* Main.storyboard */; };
 		FB3BB66624F48648001D711B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3BB66524F48648001D711B /* Assets.xcassets */; };
 		FB3BB66924F48648001D711B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3BB66724F48648001D711B /* LaunchScreen.storyboard */; };
 		FB3BB67624F488DC001D711B /* PharmaciesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3BB67424F488DC001D711B /* PharmaciesListViewController.swift */; };
@@ -28,6 +27,7 @@
 		FB3BB69324F4A5DE001D711B /* PharmaciesListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3BB69224F4A5DE001D711B /* PharmaciesListDataSource.swift */; };
 		FB3BB69624F4A6EC001D711B /* PharmacyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3BB69424F4A6EC001D711B /* PharmacyTableViewCell.swift */; };
 		FB3BB69724F4A6EC001D711B /* PharmacyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB3BB69524F4A6EC001D711B /* PharmacyTableViewCell.xib */; };
+		FB3BB69B24F4B62F001D711B /* MainFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3BB69A24F4B62F001D711B /* MainFlowCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,6 @@
 		FB3BB65924F48646001D711B /* testLocales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testLocales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3BB65C24F48646001D711B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB3BB65E24F48646001D711B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FB3BB66324F48646001D711B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB3BB66524F48648001D711B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB3BB66824F48648001D711B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB3BB66A24F48648001D711B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		FB3BB69224F4A5DE001D711B /* PharmaciesListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaciesListDataSource.swift; sourceTree = "<group>"; };
 		FB3BB69424F4A6EC001D711B /* PharmacyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyTableViewCell.swift; sourceTree = "<group>"; };
 		FB3BB69524F4A6EC001D711B /* PharmacyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PharmacyTableViewCell.xib; sourceTree = "<group>"; };
+		FB3BB69A24F4B62F001D711B /* MainFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				FB3BB68024F489E1001D711B /* Core */,
-				FB3BB67024F4874C001D711B /* Scenes */,
+				FB3BB67024F4874C001D711B /* Scenes And Coordinator */,
 				FB3BB65C24F48646001D711B /* AppDelegate.swift */,
 				FB3BB65E24F48646001D711B /* SceneDelegate.swift */,
-				FB3BB66224F48646001D711B /* Main.storyboard */,
 				FB3BB66524F48648001D711B /* Assets.xcassets */,
 				FB3BB66724F48648001D711B /* LaunchScreen.storyboard */,
 				FB3BB66A24F48648001D711B /* Info.plist */,
@@ -120,14 +119,15 @@
 			path = testLocales;
 			sourceTree = "<group>";
 		};
-		FB3BB67024F4874C001D711B /* Scenes */ = {
+		FB3BB67024F4874C001D711B /* Scenes And Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				FB3BB69924F4B61D001D711B /* Coordinators */,
 				FB3BB67324F487F5001D711B /* Login */,
 				FB3BB67224F487EF001D711B /* PharmacyDetail */,
 				FB3BB67124F487E6001D711B /* PharmaciesList */,
 			);
-			path = Scenes;
+			path = "Scenes And Coordinator";
 			sourceTree = "<group>";
 		};
 		FB3BB67124F487E6001D711B /* PharmaciesList */ = {
@@ -205,6 +205,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		FB3BB69924F4B61D001D711B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				FB3BB69A24F4B62F001D711B /* MainFlowCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -271,7 +279,6 @@
 				FB3BB69724F4A6EC001D711B /* PharmacyTableViewCell.xib in Resources */,
 				FB3BB66924F48648001D711B /* LaunchScreen.storyboard in Resources */,
 				FB3BB66624F48648001D711B /* Assets.xcassets in Resources */,
-				FB3BB66424F48646001D711B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +342,7 @@
 				FB3BB69324F4A5DE001D711B /* PharmaciesListDataSource.swift in Sources */,
 				FB3BB67A24F4896E001D711B /* PharmacyDetailViewController.swift in Sources */,
 				FB3BB65D24F48646001D711B /* AppDelegate.swift in Sources */,
+				FB3BB69B24F4B62F001D711B /* MainFlowCoordinator.swift in Sources */,
 				FB3BB65F24F48646001D711B /* SceneDelegate.swift in Sources */,
 				FB3BB68824F49955001D711B /* Constants.swift in Sources */,
 			);
@@ -343,14 +351,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FB3BB66224F48646001D711B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB3BB66324F48646001D711B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FB3BB66724F48648001D711B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

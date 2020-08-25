@@ -35,7 +35,7 @@ class MainFlowCoordinator: NSObject {
         self.navigationController = UINavigationController()
         self.window = window
         super.init()
-        
+        navigationController.navigationBar.prefersLargeTitles = true
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
         let pharmaciesViewController = PharmaciesListViewController()

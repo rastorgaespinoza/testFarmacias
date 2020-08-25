@@ -17,6 +17,7 @@ final class PharmaciesListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Listado de farmacias"
         presenter = PharmaciesListPresenter(pharmaciesListView: self)
         let nib = UINib(nibName: PharmacyTableViewCell.reuseIdentifier, bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: PharmacyTableViewCell.reuseIdentifier)
@@ -38,6 +39,7 @@ extension PharmaciesListViewController: PharmaciesListView {
 extension PharmaciesListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         showDetail(dataSource.pharmacy(at: indexPath))
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

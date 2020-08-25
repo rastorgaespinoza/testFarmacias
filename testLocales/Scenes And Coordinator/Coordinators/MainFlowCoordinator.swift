@@ -45,7 +45,6 @@ class MainFlowCoordinator: NSObject {
     
     func showDetailPharmacy(with pharmacy: Pharmacy) {
         let pharmacyDetailViewController = PharmacyDetailViewController()
-//        configure(viewController: pharmacyDetailViewController)
         pharmacyDetailViewController.pharmacy = pharmacy
         navigationController.pushViewController(pharmacyDetailViewController, animated: true)
     }

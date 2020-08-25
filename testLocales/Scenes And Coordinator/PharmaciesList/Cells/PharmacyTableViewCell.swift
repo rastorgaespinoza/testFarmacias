@@ -8,10 +8,10 @@
 
 import UIKit
 
-class PharmacyTableViewCell: UITableViewCell {
-    @IBOutlet weak var pharmacyName: UILabel!
-    @IBOutlet weak var pharmacyAddress: UILabel!
-    @IBOutlet weak var locationName: UILabel!
+final class PharmacyTableViewCell: UITableViewCell {
+    @IBOutlet private weak var pharmacyName: UILabel!
+    @IBOutlet private weak var pharmacyAddress: UILabel!
+    @IBOutlet private weak var locationName: UILabel!
     
     
     static let reuseIdentifier = "PharmacyTableViewCell"

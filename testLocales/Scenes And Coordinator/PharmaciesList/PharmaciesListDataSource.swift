@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PharmaciesListDataSource: NSObject {
+final class PharmaciesListDataSource: NSObject {
     private var pharmacies = Pharmacies()
     
     init(pharmacies: Pharmacies) {

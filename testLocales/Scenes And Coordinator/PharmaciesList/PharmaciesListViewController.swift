@@ -8,12 +8,12 @@
 
 import UIKit
 
-class PharmaciesListViewController: UIViewController {
+final class PharmaciesListViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
     
     var mainCoordinator: MainFlowCoordinator?
-    var presenter: PharmaciesListPresenter!
-    var dataSource = PharmaciesListDataSource(pharmacies: [])
+    private var presenter: PharmaciesListPresenter!
+    private var dataSource = PharmaciesListDataSource(pharmacies: [])
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +26,7 @@ class PharmaciesListViewController: UIViewController {
     }
 }
 
+// MARK: - PharmaciesListView
 extension PharmaciesListViewController: PharmaciesListView {
     func onGetPharmaciesList(pharmacies: Pharmacies) {
         dataSource.update(with: pharmacies)
@@ -33,12 +34,14 @@ extension PharmaciesListViewController: PharmaciesListView {
     }
 }
 
+// MARK: - UITableViewDelegate
 extension PharmaciesListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         showDetail(dataSource.pharmacy(at: indexPath))
     }
 }
 
+// MARK: - MainCoordinated & Segue
 extension PharmaciesListViewController: MainCoordinated {
     private func showDetail(_ pharmacy: Pharmacy) {
         mainCoordinator?.showDetailPharmacy(with: pharmacy)

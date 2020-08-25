@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		77B6ED4132C583C1BE4A98BE /* Pods_testLocales.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B592212A605DF8F547035C /* Pods_testLocales.framework */; };
+		FB1F1A7824F4CB82008236F6 /* PharmacyDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F1A7624F4CB82008236F6 /* PharmacyDetailCell.swift */; };
+		FB1F1A7924F4CB82008236F6 /* PharmacyDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB1F1A7724F4CB82008236F6 /* PharmacyDetailCell.xib */; };
+		FB1F1A7B24F4CE9C008236F6 /* PharmacyDetailDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F1A7A24F4CE9C008236F6 /* PharmacyDetailDataSource.swift */; };
+		FB1F1A7D24F4D096008236F6 /* Pharmacy+PharmacyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F1A7C24F4D096008236F6 /* Pharmacy+PharmacyDetailViewController.swift */; };
 		FB3BB65D24F48646001D711B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3BB65C24F48646001D711B /* AppDelegate.swift */; };
 		FB3BB65F24F48646001D711B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3BB65E24F48646001D711B /* SceneDelegate.swift */; };
 		FB3BB66624F48648001D711B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3BB66524F48648001D711B /* Assets.xcassets */; };
@@ -34,6 +38,10 @@
 		901BDB3E31BE55B997F2A9E9 /* Pods-testLocales.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testLocales.release.xcconfig"; path = "Target Support Files/Pods-testLocales/Pods-testLocales.release.xcconfig"; sourceTree = "<group>"; };
 		95B592212A605DF8F547035C /* Pods_testLocales.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testLocales.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F317C6877F80B62F83C1300F /* Pods-testLocales.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testLocales.debug.xcconfig"; path = "Target Support Files/Pods-testLocales/Pods-testLocales.debug.xcconfig"; sourceTree = "<group>"; };
+		FB1F1A7624F4CB82008236F6 /* PharmacyDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyDetailCell.swift; sourceTree = "<group>"; };
+		FB1F1A7724F4CB82008236F6 /* PharmacyDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PharmacyDetailCell.xib; sourceTree = "<group>"; };
+		FB1F1A7A24F4CE9C008236F6 /* PharmacyDetailDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyDetailDataSource.swift; sourceTree = "<group>"; };
+		FB1F1A7C24F4D096008236F6 /* Pharmacy+PharmacyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pharmacy+PharmacyDetailViewController.swift"; sourceTree = "<group>"; };
 		FB3BB65924F48646001D711B /* testLocales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testLocales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3BB65C24F48646001D711B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB3BB65E24F48646001D711B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +93,15 @@
 				901BDB3E31BE55B997F2A9E9 /* Pods-testLocales.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FB1F1A7524F4CB5C008236F6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FB1F1A7624F4CB82008236F6 /* PharmacyDetailCell.swift */,
+				FB1F1A7724F4CB82008236F6 /* PharmacyDetailCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		FB3BB65024F48646001D711B = {
@@ -146,8 +163,11 @@
 		FB3BB67224F487EF001D711B /* PharmacyDetail */ = {
 			isa = PBXGroup;
 			children = (
+				FB1F1A7524F4CB5C008236F6 /* Cells */,
 				FB3BB67824F4896E001D711B /* PharmacyDetailViewController.swift */,
 				FB3BB67924F4896E001D711B /* PharmacyDetailViewController.xib */,
+				FB1F1A7A24F4CE9C008236F6 /* PharmacyDetailDataSource.swift */,
+				FB1F1A7C24F4D096008236F6 /* Pharmacy+PharmacyDetailViewController.swift */,
 			);
 			path = PharmacyDetail;
 			sourceTree = "<group>";
@@ -276,6 +296,7 @@
 				FB3BB67724F488DC001D711B /* PharmaciesListViewController.xib in Resources */,
 				FB3BB67B24F4896E001D711B /* PharmacyDetailViewController.xib in Resources */,
 				FB3BB67F24F489B4001D711B /* LoginViewController.xib in Resources */,
+				FB1F1A7924F4CB82008236F6 /* PharmacyDetailCell.xib in Resources */,
 				FB3BB69724F4A6EC001D711B /* PharmacyTableViewCell.xib in Resources */,
 				FB3BB66924F48648001D711B /* LaunchScreen.storyboard in Resources */,
 				FB3BB66624F48648001D711B /* Assets.xcassets in Resources */,
@@ -339,9 +360,12 @@
 				FB3BB67E24F489B4001D711B /* LoginViewController.swift in Sources */,
 				FB3BB67624F488DC001D711B /* PharmaciesListViewController.swift in Sources */,
 				FB3BB68624F498FF001D711B /* ApiConfiguration.swift in Sources */,
+				FB1F1A7D24F4D096008236F6 /* Pharmacy+PharmacyDetailViewController.swift in Sources */,
+				FB1F1A7824F4CB82008236F6 /* PharmacyDetailCell.swift in Sources */,
 				FB3BB69324F4A5DE001D711B /* PharmaciesListDataSource.swift in Sources */,
 				FB3BB67A24F4896E001D711B /* PharmacyDetailViewController.swift in Sources */,
 				FB3BB65D24F48646001D711B /* AppDelegate.swift in Sources */,
+				FB1F1A7B24F4CE9C008236F6 /* PharmacyDetailDataSource.swift in Sources */,
 				FB3BB69B24F4B62F001D711B /* MainFlowCoordinator.swift in Sources */,
 				FB3BB65F24F48646001D711B /* SceneDelegate.swift in Sources */,
 				FB3BB68824F49955001D711B /* Constants.swift in Sources */,

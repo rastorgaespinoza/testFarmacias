@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-class PharmaciesListPresenter {
+final class PharmaciesListPresenter {
     private var pharmaciesListView: PharmaciesListView!
     
     init(pharmaciesListView: PharmaciesListView) {

@@ -10,4 +10,5 @@ import Foundation
 
 protocol PharmaciesListView {
     func onGetPharmaciesList(pharmacies: Pharmacies)
+    func onErrorGetPharmaciesList()
 }

@@ -49,18 +49,20 @@ final class PharmaciesListPresenter {
         }
     }
     
-    func getPharmaciesByLimit(limit: Int) {
+    func getPharmaciesByLimit(limit: String) {
+        guard let limit = Int(limit) else { return }
         AF.request(PharmaciesGobEndpoint.getPharmaciesByLimit(limit: limit))
             .validate(statusCode: 200..<300)
-            .responseDecodable { (response: DataResponse<PharmaciesGob, AFError>) in
+            .responseDecodable { [weak self] (response: DataResponse<PharmaciesGob, AFError>) in
                 debugPrint(response)
                 switch response.result {
                 case .success(let responsePharmaciesGob):
                     let pharmacies = responsePharmaciesGob.result.records
-                    self.pharmaciesListView.onGetPharmaciesList(pharmacies: pharmacies)
+                    self?.pharmaciesListView.onGetPharmaciesList(pharmacies: pharmacies)
                     break
                 case .failure(let error):
                     print("fail \(error)")
+                    self?.pharmaciesListView.onErrorGetPharmaciesList()
                     break
                 }
         }

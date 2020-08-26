@@ -7,8 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PharmacyListViewController" customModule="testLocales" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PharmaciesListViewController" customModule="testLocales" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicatorView" destination="JUw-KS-24D" id="skF-Iz-Kpv"/>
                 <outlet property="tableView" destination="Vi9-tE-6Rr" id="d3V-RW-QuH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,9 +23,14 @@
                     <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="JUw-KS-24D">
+                    <rect key="frame" x="188.5" y="456.5" width="37" height="37"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
+                <constraint firstItem="JUw-KS-24D" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Axg-Cl-5Jx"/>
+                <constraint firstItem="JUw-KS-24D" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="EtZ-xY-sDg"/>
                 <constraint firstItem="Vi9-tE-6Rr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="JIV-1E-OH9"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Vi9-tE-6Rr" secondAttribute="bottom" id="R5o-Tf-P1e"/>
                 <constraint firstItem="Vi9-tE-6Rr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hs2-r0-UDn"/>

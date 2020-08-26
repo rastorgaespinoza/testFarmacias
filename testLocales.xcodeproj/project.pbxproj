@@ -34,6 +34,7 @@
 		FB3BB69B24F4B62F001D711B /* MainFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3BB69A24F4B62F001D711B /* MainFlowCoordinator.swift */; };
 		FBB3AB1824F5E1EE009AE810 /* PharmaciesGobEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3AB1724F5E1EE009AE810 /* PharmaciesGobEndpoint.swift */; };
 		FBB3AB1A24F5E50B009AE810 /* PharmaciesGob.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3AB1924F5E50B009AE810 /* PharmaciesGob.swift */; };
+		FBB3AB1D24F5F291009AE810 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3AB1C24F5F291009AE810 /* UITextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		FB3BB69A24F4B62F001D711B /* MainFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinator.swift; sourceTree = "<group>"; };
 		FBB3AB1724F5E1EE009AE810 /* PharmaciesGobEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaciesGobEndpoint.swift; sourceTree = "<group>"; };
 		FBB3AB1924F5E50B009AE810 /* PharmaciesGob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaciesGob.swift; sourceTree = "<group>"; };
+		FBB3AB1C24F5F291009AE810 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		FB3BB65B24F48646001D711B /* testLocales */ = {
 			isa = PBXGroup;
 			children = (
+				FBB3AB1B24F5F281009AE810 /* Extensions */,
 				FB3BB68024F489E1001D711B /* Core */,
 				FB3BB67024F4874C001D711B /* Scenes And Coordinator */,
 				FB3BB65C24F48646001D711B /* AppDelegate.swift */,
@@ -237,6 +240,14 @@
 				FB3BB69A24F4B62F001D711B /* MainFlowCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		FBB3AB1B24F5F281009AE810 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FBB3AB1C24F5F291009AE810 /* UITextField.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +380,7 @@
 				FB3BB68624F498FF001D711B /* ApiConfiguration.swift in Sources */,
 				FB1F1A7D24F4D096008236F6 /* Pharmacy+PharmacyDetailViewController.swift in Sources */,
 				FB1F1A7824F4CB82008236F6 /* PharmacyDetailCell.swift in Sources */,
+				FBB3AB1D24F5F291009AE810 /* UITextField.swift in Sources */,
 				FB3BB69324F4A5DE001D711B /* PharmaciesListDataSource.swift in Sources */,
 				FBB3AB1A24F5E50B009AE810 /* PharmaciesGob.swift in Sources */,
 				FB3BB67A24F4896E001D711B /* PharmacyDetailViewController.swift in Sources */,

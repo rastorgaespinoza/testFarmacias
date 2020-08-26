@@ -32,6 +32,8 @@
 		FB3BB69624F4A6EC001D711B /* PharmacyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3BB69424F4A6EC001D711B /* PharmacyTableViewCell.swift */; };
 		FB3BB69724F4A6EC001D711B /* PharmacyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB3BB69524F4A6EC001D711B /* PharmacyTableViewCell.xib */; };
 		FB3BB69B24F4B62F001D711B /* MainFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3BB69A24F4B62F001D711B /* MainFlowCoordinator.swift */; };
+		FBB3AB1824F5E1EE009AE810 /* PharmaciesGobEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3AB1724F5E1EE009AE810 /* PharmaciesGobEndpoint.swift */; };
+		FBB3AB1A24F5E50B009AE810 /* PharmaciesGob.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3AB1924F5E50B009AE810 /* PharmaciesGob.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		FB3BB69424F4A6EC001D711B /* PharmacyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyTableViewCell.swift; sourceTree = "<group>"; };
 		FB3BB69524F4A6EC001D711B /* PharmacyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PharmacyTableViewCell.xib; sourceTree = "<group>"; };
 		FB3BB69A24F4B62F001D711B /* MainFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinator.swift; sourceTree = "<group>"; };
+		FBB3AB1724F5E1EE009AE810 /* PharmaciesGobEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaciesGobEndpoint.swift; sourceTree = "<group>"; };
+		FBB3AB1924F5E50B009AE810 /* PharmaciesGob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmaciesGob.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				FB3BB68224F48A22001D711B /* Pharmacy.swift */,
+				FBB3AB1924F5E50B009AE810 /* PharmaciesGob.swift */,
 			);
 			path = "Model Types";
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				FB3BB68C24F49CC1001D711B /* PharmaciesEndpoint.swift */,
+				FBB3AB1724F5E1EE009AE810 /* PharmaciesGobEndpoint.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -356,6 +362,7 @@
 				FB3BB68D24F49CC1001D711B /* PharmaciesEndpoint.swift in Sources */,
 				FB3BB68F24F4A026001D711B /* PharmacyListPresenter.swift in Sources */,
 				FB3BB68324F48A22001D711B /* Pharmacy.swift in Sources */,
+				FBB3AB1824F5E1EE009AE810 /* PharmaciesGobEndpoint.swift in Sources */,
 				FB3BB69124F4A120001D711B /* PharmaciesListView.swift in Sources */,
 				FB3BB67E24F489B4001D711B /* LoginViewController.swift in Sources */,
 				FB3BB67624F488DC001D711B /* PharmaciesListViewController.swift in Sources */,
@@ -363,6 +370,7 @@
 				FB1F1A7D24F4D096008236F6 /* Pharmacy+PharmacyDetailViewController.swift in Sources */,
 				FB1F1A7824F4CB82008236F6 /* PharmacyDetailCell.swift in Sources */,
 				FB3BB69324F4A5DE001D711B /* PharmaciesListDataSource.swift in Sources */,
+				FBB3AB1A24F5E50B009AE810 /* PharmaciesGob.swift in Sources */,
 				FB3BB67A24F4896E001D711B /* PharmacyDetailViewController.swift in Sources */,
 				FB3BB65D24F48646001D711B /* AppDelegate.swift in Sources */,
 				FB1F1A7B24F4CE9C008236F6 /* PharmacyDetailDataSource.swift in Sources */,

@@ -14,6 +14,7 @@ struct Pharmacy: Codable {
     let localidadNombre, localDireccion, funcionamientoHoraApertura, funcionamientoHoraCierre: String
     let localTelefono, localLat, localLng, funcionamientoDia: String
     let fkRegion, fkComuna, fkLocalidad: String
+    let id: Int?
 
     enum CodingKeys: String, CodingKey {
         case fecha
@@ -31,6 +32,7 @@ struct Pharmacy: Codable {
         case fkRegion = "fk_region"
         case fkComuna = "fk_comuna"
         case fkLocalidad = "fk_localidad"
+        case id = "_id"
     }
 }
 

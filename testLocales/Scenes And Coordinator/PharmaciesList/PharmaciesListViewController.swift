@@ -23,7 +23,7 @@ final class PharmaciesListViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: PharmacyTableViewCell.reuseIdentifier)
         tableView.delegate = self
         tableView.dataSource = dataSource
-        presenter.getPharmacies()
+        presenter.getPharmaciesByLimit(limit: 10)
     }
 }
 

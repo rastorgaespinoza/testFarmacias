@@ -13,6 +13,11 @@ struct Constants {
     struct ProductionServerMinsal {
         static let baseURL = "https://farmanet.minsal.cl"
     }
+    
+    struct ProductionServerGob {
+        static let baseURL = "http://datos.gob.cl/"
+        static let pathSearch = "api/action/datastore_search"
+    }
 }
 
 enum HTTPHeaderField: String {

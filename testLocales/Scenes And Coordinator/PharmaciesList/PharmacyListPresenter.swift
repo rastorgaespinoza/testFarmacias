@@ -31,4 +31,38 @@ final class PharmaciesListPresenter {
                 }
             }
     }
+    
+    func getPharmaciesByQuery(query: String) {
+        AF.request(PharmaciesGobEndpoint.getPharmaciesByPharmacy(pharmacy: query))
+            .validate(statusCode: 200..<300)
+            .responseDecodable { (response: DataResponse<PharmaciesGob, AFError>) in
+                debugPrint(response)
+                switch response.result {
+                case .success(let responsePharmaciesGob):
+                    let pharmacies = responsePharmaciesGob.result.records
+                    self.pharmaciesListView.onGetPharmaciesList(pharmacies: pharmacies)
+                    break
+                case .failure(let error):
+                    print("fail \(error)")
+                    break
+                }
+        }
+    }
+    
+    func getPharmaciesByLimit(limit: Int) {
+        AF.request(PharmaciesGobEndpoint.getPharmaciesByLimit(limit: limit))
+            .validate(statusCode: 200..<300)
+            .responseDecodable { (response: DataResponse<PharmaciesGob, AFError>) in
+                debugPrint(response)
+                switch response.result {
+                case .success(let responsePharmaciesGob):
+                    let pharmacies = responsePharmaciesGob.result.records
+                    self.pharmaciesListView.onGetPharmaciesList(pharmacies: pharmacies)
+                    break
+                case .failure(let error):
+                    print("fail \(error)")
+                    break
+                }
+        }
+    }
 }
